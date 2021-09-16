@@ -1,5 +1,6 @@
 {
 	"values": [
-	"frog:tick"
+	"frog:tick",
+	"random:tick"
 	]
 }

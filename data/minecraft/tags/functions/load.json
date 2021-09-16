@@ -1,5 +1,7 @@
 {
 	"values": [
-	"frog:load"
+	"frog:load",
+	"frog:hopcycle",
+	"random:init"
 	]
 }
