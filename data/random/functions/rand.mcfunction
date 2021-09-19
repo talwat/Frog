@@ -1,3 +1,6 @@
+#Random number generator: https://www.planetminecraft.com/data-pack/math-random-random-number-generator/
+#Made by: fafik77
+
 scoreboard players operation number RNG = #prev_number RNG
 scoreboard players operation number RNG -= #const2 RNG
 scoreboard players operation number RNG *= #clock_time RNG

@@ -1,9 +1,3 @@
-#Scoreboards
-scoreboard objectives add frogHopX1 dummy
-scoreboard objectives add frogHopX2 dummy
-scoreboard objectives add frogHopZ1 dummy
-scoreboard objectives add frogHopZ2 dummy
-
 #Storing Position
 execute store result score @s frogHopX1 run data get entity @s Pos[0] 1000
 execute store result score @s frogHopY1 run data get entity @s Pos[1] 1000
