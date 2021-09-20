@@ -5,6 +5,6 @@
 
     #Generating random value
     function random:rand
-    
+
     #Storing random value as rotational data
     execute as @e[tag=frog] store result entity @s Rotation[0] float 1 run scoreboard players get number RNG
