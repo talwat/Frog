@@ -1,3 +1,3 @@
-#Summoning the armor stand with tag "frog"
-    summon minecraft:armor_stand ~ ~ ~ {Tags:[frog]}
-#NOTE: Once the models are finished the summon command will make the armor stand invisible aswell.
+#Summoning the armor stand and hitbox
+    summon minecraft:armor_stand ~ ~ ~ {Tags:[frog], Invisible:1b, Small:1b}
+    summon minecraft:silverfish ~ ~ ~ {Tags:[hitbox], ActiveEffects:[{Id:14,Amplifier:0,Duration:20000000,ShowParticles:0b}], Silent:1b}

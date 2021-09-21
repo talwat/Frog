@@ -1,6 +1,5 @@
 #Storing Position
     execute store result score @s frogHopX1 run data get entity @s Pos[0] 1000
-    execute store result score @s frogHopY1 run data get entity @s Pos[1] 1000
     execute store result score @s frogHopZ1 run data get entity @s Pos[2] 1000
 
 #Teleporting
@@ -8,7 +7,6 @@
 
 #Storing the second position
     execute store result score @s frogHopX2 run data get entity @s Pos[0] 1000
-    execute store result score @s frogHopY2 run data get entity @s Pos[1] 1000
     execute store result score @s frogHopZ2 run data get entity @s Pos[2] 1000
 
 #Modifying Data
