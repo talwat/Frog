@@ -14,6 +14,10 @@
     scoreboard objectives add frogTurn dummy 
     scoreboard players set 180 frogTurn 180 
 
+    #Frog Spawning Scoreboards
+    scoreboard objectives add frogSpawn dummy
+    scoreboard players add frogCount frogSpawn 0
+
 
 #Load Message
     tellraw @a ["",{"text":"Frog","bold":true,"color":"dark_green"},{"text":" Datapack Loaded!","bold":true,"color":"green"}]
