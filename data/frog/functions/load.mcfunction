@@ -10,6 +10,10 @@
     scoreboard objectives add frogMotionY dummy
     scoreboard objectives add frogMotionZ dummy
 
+    #Rotation changing scoreboards (frog:lookaway)
+    scoreboard objectives add frogTurn dummy 
+    scoreboard players set 180 frogTurn 180 
+
 
 #Load Message
     tellraw @a ["",{"text":"Frog","bold":true,"color":"dark_green"},{"text":" Datapack Loaded!","bold":true,"color":"green"}]

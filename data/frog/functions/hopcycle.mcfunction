@@ -5,4 +5,5 @@
     execute as @e[tag=frog] at @s run schedule function frog:turn 1s replace
 
 #Repeating this function
-    schedule function frog:hopcycle 5s replace
+    schedule function frog:hopcycle 3s append
+    tag @e[tag=frogJumped] remove frogJumped

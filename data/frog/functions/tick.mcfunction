@@ -14,3 +14,6 @@
 
     #Detecting no velocity
     execute as @e[tag=frog] at @s if score @s frogMotionX matches -300..300 if score @s frogMotionZ matches -300..300 run item replace entity @s armor.head with stick{CustomModelData:1}
+
+#Detecting when player is near to hop away
+    execute as @e[tag=frog, tag=!frogJumped] at @s run execute if entity @e[type=player, distance=..3] run function frog:lookaway
