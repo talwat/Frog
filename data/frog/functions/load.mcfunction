@@ -1,3 +1,6 @@
+kill @e[tag=frog]
+kill @e[tag=hitbox]
+
 #Scoreboards
     #Frog hopping scoreboards (frog:hop)
     scoreboard objectives add frogHopX1 dummy

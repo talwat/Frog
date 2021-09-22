@@ -1,7 +1,7 @@
 {
 	"values": [
+	"frog:hitboxtick",
 	"frog:tick",
-	"frog:hitbox/tick",
 	"random:tick"
 	]
 }
