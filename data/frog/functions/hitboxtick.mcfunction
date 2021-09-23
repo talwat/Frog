@@ -1,6 +1,5 @@
 #Teleporting hitbox to frog
-    execute as @e[tag=frog] at @s as @e[tag=hitbox, sort=nearest, distance=..0.5, limit=1] run tp @s ~ ~ ~ ~ ~
-    execute as @e[tag=frog] at @s as @e[tag=hitbox, sort=nearest, limit=1] run tp @s ~ ~ ~ ~ ~
+    execute as @e[tag=frog] at @s as @e[tag=hitbox, sort=nearest, distance=..1, limit=1] run tp @s ~ ~ ~ ~ ~
 
 #Killing frog if hitbox has been killed
     execute as @e[tag=frog] at @s unless entity @e[tag=hitbox, sort=nearest, distance=..0.3] run playsound frog:ribbithigh neutral @a ~ ~ ~

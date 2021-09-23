@@ -19,4 +19,4 @@
     execute as @e[tag=frog, tag=!frogJumped] at @s run execute if entity @e[type=player, distance=..3, predicate=!frog:sneaking] run function frog:lookaway
 
 #Mob Spawning Code
-    execute as @e[type=slime, tag=!frogSpawned, sort=random] at @s run function frog:naturalspawn
+    execute as @e[type=slime, nbt={Size:3}, tag=!frogSpawned, sort=random] at @s run function frog:naturalspawn
