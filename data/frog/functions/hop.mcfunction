@@ -1,5 +1,5 @@
 #Playing Sound
-    playsound frog:ribbit neutral @a ~ ~ ~
+    playsound frog:ribbit neutral @a ~ ~ ~ 0.5 1.3
 
 #Storing Position
     execute store result score @s frogHopX1 run data get entity @s Pos[0] 1000
