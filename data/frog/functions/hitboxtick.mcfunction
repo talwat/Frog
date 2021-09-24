@@ -10,3 +10,6 @@
     tag @e[tag=hitbox, tag=!hurt,nbt={HurtTime:10s}] add hurt
     tag @e[tag=hitbox, tag=hurt,nbt={HurtTime:9s}] remove hurt
     execute as @e[tag=hitbox, tag=hurt] at @s run function frog:hit
+
+#Turning red when hit
+    execute as @e[tag=hitbox, nbt=!{HurtTime:0s}] at @s as @e[tag=frog, sort=nearest, distance=..1, limit=1, nbt={ArmorItems:[{}, {}, {}, {id:"minecraft:stick", tag:{CustomModelData:1}}]}] run say hi
