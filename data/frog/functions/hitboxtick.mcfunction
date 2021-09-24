@@ -12,4 +12,9 @@
     execute as @e[tag=hitbox, tag=hurt] at @s run function frog:hit
 
 #Turning red when hit
-    execute as @e[tag=hitbox, nbt=!{HurtTime:0s}] at @s as @e[tag=frog, sort=nearest, distance=..1, limit=1, nbt={ArmorItems:[{}, {}, {}, {id:"minecraft:stick", tag:{CustomModelData:1}}]}] run say hi
+    execute as @e[tag=hitbox, nbt=!{HurtTime:0s}] at @s as @e[tag=frog, sort=nearest, distance=..1, limit=1, nbt={ArmorItems:[{}, {}, {}, {tag:{CustomModelData:1}}]}] run item replace entity @s armor.head with redstone{CustomModelData:1}
+    execute as @e[tag=hitbox, nbt={HurtTime:0s}] at @s as @e[tag=frog, sort=nearest, distance=..1, limit=1, nbt={ArmorItems:[{}, {}, {}, {tag:{CustomModelData:1}}]}] run item replace entity @s armor.head with stick{CustomModelData:1}
+    execute as @e[tag=hitbox, nbt=!{HurtTime:0s}] at @s as @e[tag=frog, sort=nearest, distance=..1, limit=1, nbt={ArmorItems:[{}, {}, {}, {tag:{CustomModelData:2}}]}] run item replace entity @s armor.head with stick{CustomModelData:1}
+    execute as @e[tag=hitbox, nbt={HurtTime:0s}] at @s as @e[tag=frog, sort=nearest, distance=..1, limit=1, nbt={ArmorItems:[{}, {}, {}, {tag:{CustomModelData:2}}]}] run item replace entity @s armor.head with stick{CustomModelData:1}
+    execute as @e[tag=hitbox, nbt=!{HurtTime:0s}] at @s as @e[tag=frog, sort=nearest, distance=..1, limit=1, nbt={ArmorItems:[{}, {}, {}, {tag:{CustomModelData:3}}]}] run item replace entity @s armor.head with stick{CustomModelData:1}
+    execute as @e[tag=hitbox, nbt={HurtTime:0s}] at @s as @e[tag=frog, sort=nearest, distance=..1, limit=1, nbt={ArmorItems:[{}, {}, {}, {tag:{CustomModelData:3}}]}] run item replace entity @s armor.head with stick{CustomModelData:1}
