@@ -7,4 +7,4 @@
     function random:rand
 
     #Storing random value as rotational data
-    execute as @e[tag=frog] store result entity @s Rotation[0] float 1 run scoreboard players get number RNG
+    execute as @e[tag=frog] at @s unless block ~ ~-0.1 ~ #frog:transparent store result entity @s Rotation[0] float 1 run scoreboard players get number RNG

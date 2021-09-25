@@ -3,6 +3,7 @@
 
 #Turning towards player and storing rotation
     execute as @s at @s run tp @s ~ ~ ~ facing entity @p
+    execute at @s if block ~ ~-0.3 ~ #frog:transparent run tp @s ~ ~-0.3 ~ ~ ~ 
     execute store result score @s frogTurn run data get entity @s Rotation[0] 1
 
 #Flipping the frog around
