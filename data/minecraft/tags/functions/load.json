@@ -2,6 +2,6 @@
 	"values": [
 	"frog:load",
 	"frog:hopcycle",
-	"random:init"
+	"random:load"
 	]
 }

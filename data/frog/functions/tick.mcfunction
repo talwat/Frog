@@ -19,6 +19,7 @@
     #Detecting no velocity
     execute as @e[tag=frog] at @s if entity @e[tag=hitbox, sort=nearest, distance=..1, limit=1, nbt={HurtTime:0s}] if score @s frogMotionX matches -300..300 if score @s frogMotionZ matches -300..300 run item replace entity @s armor.head with stick{CustomModelData:1}
     execute as @e[tag=frog] at @s if entity @e[tag=hitbox, sort=nearest, distance=..1, limit=1, nbt=!{HurtTime:0s}] if score @s frogMotionX matches -300..300 if score @s frogMotionZ matches -300..300 run item replace entity @s armor.head with redstone{CustomModelData:1}
+    
 #Detecting when player is near to hop away
     execute as @e[tag=frog, tag=!frogJumped] at @s unless block ~ ~-0.1 ~ #frog:transparent run execute if entity @e[type=player, distance=..3, predicate=!frog:sneaking] run function frog:lookaway
 
