@@ -5,11 +5,11 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:cooked_chicken",
+            "name": "minecraft:chicken",
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Frog Leg\",\"color\":\"white\",\"italic\":false}'},CustomModelData:11,frogleg:1b}"
+                "tag": "{display:{Name:'{\"text\":\"Raw Frog Leg\",\"color\":\"white\",\"italic\":false}'},CustomModelData:1,frogleg:1b}"
               }
             ],
             "conditions": [

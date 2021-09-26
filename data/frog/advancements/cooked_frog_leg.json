@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "cookedFrogLegUnlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "frog:cooked_frog_leg"
+            }
+        }
+    },
+    "rewards": {
+        "function": "frog:cookedfrogleg.craft"
+    }
+}

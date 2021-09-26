@@ -1,0 +1,1 @@
+give @s armor_stand{display:{Name:'{"text":"Frog Spawn Egg","color":"white","italic":false}'},CustomModelData:1,frogspawneggitem:1b,EntityTag:{Marker:1b,Invisible:1b,Tags:["frogSpawnEgg"]}}

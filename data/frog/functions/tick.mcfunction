@@ -1,3 +1,7 @@
+#Spawn Egg Code
+    execute as @e[tag=frogSpawnEgg] at @s run function frog:summon
+    execute as @e[tag=frogSpawnEgg] at @s run kill @s
+
 #Storing X, Y, and Z motion data scaled up by 10000
     execute as @e[tag=frog] at @s store result score @s frogMotionX run data get entity @s Motion[0] 10000
     execute as @e[tag=frog] at @s store result score @s frogMotionY run data get entity @s Motion[1] 10000

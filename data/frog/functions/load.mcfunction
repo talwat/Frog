@@ -1,6 +1,10 @@
 kill @e[tag=frog]
 kill @e[tag=hitbox]
 
+#Taking away crafting recipe and advancement
+    recipe take @a frog:cooked_frog_leg
+    advancement revoke @a only frog:cooked_frog_leg
+
 #Scoreboards
     #Frog hopping scoreboards (frog:hop)
     scoreboard objectives add frogHopX1 dummy
