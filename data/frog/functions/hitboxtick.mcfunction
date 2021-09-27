@@ -7,6 +7,6 @@
     execute as @e[tag=hitbox] at @s unless entity @e[tag=frog, sort=nearest, distance=..0.5] run kill @s
 
 #Hit detection code
-    tag @e[tag=hitbox, tag=!hurt,nbt={HurtTime:10s}] add hurt
-    tag @e[tag=hitbox, tag=hurt,nbt={HurtTime:9s}] remove hurt
-    execute as @e[tag=hitbox, tag=hurt] at @s run function frog:hit
+    tag @e[type=silverfish, tag=hitbox, tag=!hurt,nbt={HurtTime:10s}] add hurt
+    tag @e[type=silverfish, tag=hitbox, tag=hurt,nbt={HurtTime:9s}] remove hurt
+    execute as @e[type=silverfish, tag=hitbox, tag=hurt] at @s run function frog:hit

@@ -11,9 +11,9 @@ This was made by:
 
 ## Info
 
-The datapack has the same installation process as other datapacks, it is recommended to have a decent computer.
+The datapack has the same installation process as other datapacks. It is also recommended to have a decent computer.
 
-This NEEDS [this](https://placeholder) resource pack.
+This datapack **needs** [this](https://placeholder) resource pack.
 
 Note: Due to a recipe, cooking raw chicken is broken.
 
