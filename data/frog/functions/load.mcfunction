@@ -28,7 +28,5 @@ kill @e[tag=hitbox]
     #Red tint Detection Scoreboard
     scoreboard objectives add hurtTime dummy
 
-
-
 #Load Message
     tellraw @a ["",{"text":"Frog","bold":true,"color":"dark_green"},{"text":" Datapack Loaded!","bold":true,"color":"green"}]
