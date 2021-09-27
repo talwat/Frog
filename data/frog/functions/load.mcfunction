@@ -25,6 +25,10 @@ kill @e[tag=hitbox]
     scoreboard objectives add frogSpawn dummy
     scoreboard players add frogCount frogSpawn 0
 
+    #Red tint Detection Scoreboard
+    scoreboard objectives add hurtTime dummy
+
+
 
 #Load Message
     tellraw @a ["",{"text":"Frog","bold":true,"color":"dark_green"},{"text":" Datapack Loaded!","bold":true,"color":"green"}]

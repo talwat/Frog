@@ -8,22 +8,12 @@
     execute as @e[type=armor_stand, tag=frog] at @s store result score @s frogMotionZ run data get entity @s Motion[2] 10000
 
 #Detecting velocity to change pose
-    #Detecting upwards velocity
-    execute as @e[type=armor_stand, tag=frog] at @s if entity @e[type=silverfish, tag=hitbox, sort=nearest, distance=..1, limit=1, nbt={HurtTime:0s}] if score @s frogMotionY matches -770.. unless score @s frogMotionX matches 0 run item replace entity @s armor.head with stick{CustomModelData:2}
-    execute as @e[type=armor_stand, tag=frog] at @s if entity @e[type=silverfish, tag=hitbox, sort=nearest, distance=..1, limit=1, nbt={HurtTime:0s}] if score @s frogMotionY matches -770.. if score @s frogMotionX matches 0 unless score @s frogMotionZ matches 0 run item replace entity @s armor.head with stick{CustomModelData:2}
-    execute as @e[type=armor_stand, tag=frog] at @s if entity @e[type=silverfish, tag=hitbox, sort=nearest, distance=..1, limit=1, nbt=!{HurtTime:0s}] if score @s frogMotionY matches -770.. unless score @s frogMotionX matches 0 run item replace entity @s armor.head with redstone{CustomModelData:2}
-    execute as @e[type=armor_stand, tag=frog] at @s if entity @e[type=silverfish, tag=hitbox, sort=nearest, distance=..1, limit=1, nbt=!{HurtTime:0s}] if score @s frogMotionY matches -770.. if score @s frogMotionX matches 0 unless score @s frogMotionZ matches 0 run item replace entity @s armor.head with redstone{CustomModelData:2}
+    #Getting Hurt Time
+    execute as @e[type=armor_stand, tag=frog] at @s store result score @s hurtTime run data get entity @e[type=silverfish, tag=hitbox, sort=nearest, distance=..1, limit=1] HurtTime 
 
-    #Detecting downwards velocity
-    execute as @e[type=armor_stand, tag=frog] at @s if entity @e[type=silverfish, tag=hitbox, sort=nearest, distance=..1, limit=1, nbt={HurtTime:0s}] if score @s frogMotionY matches ..-790 unless score @s frogMotionX matches 0 run item replace entity @s armor.head with stick{CustomModelData:3}
-    execute as @e[type=armor_stand, tag=frog] at @s if entity @e[type=silverfish, tag=hitbox, sort=nearest, distance=..1, limit=1, nbt={HurtTime:0s}] if score @s frogMotionY matches ..-790 if score @s frogMotionX matches 0 unless score @s frogMotionZ matches 0 run item replace entity @s armor.head with stick{CustomModelData:3}
-    execute as @e[type=armor_stand, tag=frog] at @s if entity @e[type=silverfish, tag=hitbox, sort=nearest, distance=..1, limit=1, nbt=!{HurtTime:0s}] if score @s frogMotionY matches ..-790 unless score @s frogMotionX matches 0 run item replace entity @s armor.head with redstone{CustomModelData:3}
-    execute as @e[type=armor_stand, tag=frog] at @s if entity @e[type=silverfish, tag=hitbox, sort=nearest, distance=..1, limit=1, nbt=!{HurtTime:0s}] if score @s frogMotionY matches ..-790 if score @s frogMotionX matches 0 unless score @s frogMotionZ matches 0 run item replace entity @s armor.head with redstone{CustomModelData:3}
+    #Calculating Pose
+    execute as @e[type=armor_stand, tag=frog] at @s run function frog:posecheck
 
-    #Detecting no velocity
-    execute as @e[type=armor_stand, tag=frog] at @s if entity @e[type=silverfish, tag=hitbox, sort=nearest, distance=..1, limit=1, nbt={HurtTime:0s}] if score @s frogMotionX matches -300..300 if score @s frogMotionZ matches -300..300 run item replace entity @s armor.head with stick{CustomModelData:1}
-    execute as @e[type=armor_stand, tag=frog] at @s if entity @e[type=silverfish, tag=hitbox, sort=nearest, distance=..1, limit=1, nbt=!{HurtTime:0s}] if score @s frogMotionX matches -300..300 if score @s frogMotionZ matches -300..300 run item replace entity @s armor.head with redstone{CustomModelData:1}
-    
 #Detecting when player is near to hop away
     execute as @e[type=armor_stand, tag=frog, tag=!frogJumped] at @s unless block ~ ~-0.1 ~ #frog:transparent run execute if entity @e[type=player, distance=..3, predicate=!frog:sneaking] run function frog:lookaway
 
