@@ -1,6 +1,16 @@
 Frog Datapack
 ===
 
+## Update, two years later!
+
+Alright, it's 2023 and I'm looking through my projects and I remember this one.
+
+This was made **before** frogs were officially added to minecraft.
+This datapack was last updated on September 29, 2021,
+which is ~a year before they were officially implemented.
+
+Nice.
+
 ## Credits
 
 This was made by:
